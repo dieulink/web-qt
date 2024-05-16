@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#header {
+    height: 60px;
+    background-color:  #0000004c;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    animation-name: ani5;
+    animation-duration: 0.3s;
+    animation-delay: 0s;
+    animation-direction:normal;
+    animation-timing-function: ease;
+}
+@keyframes ani5{
+    0%{
+        top:-100px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+#nav {
+font-family: 'Montserrat', sans-serif;
+}
+#nav li {
+    display: inline-block;
+}
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 40px;
+    display: inline-block;
+    font-size:large;
+    text-transform: uppercase;
+}
+#nav li:hover a {
+    color: #000000b1;
+    background-color: #fff;
+    cursor: pointer;
+}
+#wcqt{
+    padding-top: 48%;
+    margin-top: 0px;
+    background-image: linear-gradient(0,rgba(2, 2, 2, 0.458),rgba(13, 13, 13, 0.337)),url(/img/index/background_index.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#wcqt>.text{
+    font-size: 100px;
+    font-family: 'Lobster', sans-serif;
+    color: white;
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+#wcqt>.text>.welcome{
+    margin-bottom: -20px ;
+    animation-name: ani1;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-direction:normal;
+    position: relative;
+    animation-timing-function: ease;
+}
+#wcqt>.text>.to{
+    margin-bottom: -20px ;
+    animation-name: ani2;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-direction:normal;
+    position: relative;
+    animation-timing-function: ease;
+}
+#wcqt>.text>.QT{
+    font-size: 120px;
+    animation-name: ani3;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-direction:normal;
+    position: relative;
+    animation-timing-function: ease;
+}
+
+@keyframes ani1{
+    0%{
+       left:-500px
+
+      }
+      100%{
+       left: 0px;
+      }
+}
+@keyframes ani2{
+    0%{
+       left:500px
+
+      }
+      100%{
+       left: 0px;
+      }
+}
+@keyframes ani3{
+    0%{
+       top:500px
+
+      }
+      100%{
+       top: 0px;
+      }
+}

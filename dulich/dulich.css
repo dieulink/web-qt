@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#header {
+    height: 60px;
+    background-color:  #0000004c;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    animation-name: ani5;
+    animation-duration: 0.3s;
+    animation-delay: 0s;
+    animation-direction:normal;
+    animation-timing-function: ease;
+}
+@keyframes ani5{
+    0%{
+        top:-100px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+#nav {
+font-family: 'Montserrat', sans-serif;
+}
+#nav li {
+    display: inline-block;
+}
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 40px;
+    display: inline-block;
+    font-size:large;
+    text-transform: uppercase;
+}
+#nav li:hover a {
+    color: #000000b1;
+    background-color: #fff;
+    cursor: pointer;
+}
+#slider {
+    margin-top: 0;
+    background-image:  linear-gradient(0,rgba(2, 2, 2, 0.449),rgba(13, 13, 13, 0.582)),url(/img/dulich/bienmuitreo2.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    position: relative;
+}
+#slider>#direction{
+    text-align: center;
+}
+#slider>#direction>#prev{
+padding: 5px 10px;
+font-family: cursive;
+font-weight: bold;
+background-color: #ffffff44;
+border: none;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+transition: 0.5s;
+margin: 0 30px;
+}
+#slider>#direction>#next{
+padding: 5px 10px;
+font-family: cursive;
+font-weight: bold;
+background-color: #ffffff44;
+border: none;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+transition: 0.5s;
+margin: 0 40px 30px;
+}
+#slider>#direction>#prev:hover{
+background-color:#ffffffc8;
+cursor: pointer;
+}
+#slider>#direction>#next:hover{
+background-color: #ffffffc8;
+cursor: pointer;
+}
+#slider>#formlist{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    overflow: auto;
+    width: 1280px;
+    scroll-behavior: smooth;
+    scroll-snap-type: both;
+}
+#slider>#formlist::-webkit-scrollbar{
+    display:none;
+}
+#slider>#formlist>#list{
+    display: flex;
+    width: max-content;
+}
+#slider>#formlist>#list>.item{
+    border-radius: 15px;
+    width: 300px;
+    height: 500px;
+    background-image:linear-gradient(to top,#356f9fdc,#cccacaa7) ;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 10px;
+    scroll-snap-align: start;
+}
+#slider>#formlist>#list>.item>.avatar{
+    display: block;
+    margin: 20px auto 10px;
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px #b4b2b2;
+}
+#slider>#formlist>#list>.item>.content{
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+#slider>#formlist>#list>.item>.content table td{
+    padding: 10px 0;
+    border-bottom: 1px solid #ffffff2f;
+    color: #fff;
+}
+#slider>#formlist>#list>.item>.content table td:nth-child(2){
+    text-align: right;
+}

@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#header {
+    height: 60px;
+    /* background-color:#3a8bce; */
+    background-color:#0000004c;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    animation-name: ani5;
+    animation-duration: 0.3s;
+    animation-delay: 0s;
+    animation-direction:normal;
+    animation-timing-function: ease;
+}
+@keyframes ani5{
+    0%{
+        top:-100px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+#nav {
+font-family: 'Montserrat', sans-serif;
+}
+#nav li {
+    display: inline-block;
+}
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 40px;
+    display: inline-block;
+    font-size:large;
+    text-transform: uppercase;
+}
+#nav li:hover a {
+    color:#000000;
+    background-color: #fff;
+    cursor: pointer;
+}
+.danhnhan>.item{
+    height: 720px;
+    width: 100vw;
+    background-image: linear-gradient(to bottom right, #133d70, #274c8854);
+    margin-top: 0px;
+    background-position: top;
+    padding-top: 0.1%;
+    display: flex;
+}
+.danhnhan>.item>.text{
+    height: 540px;
+    width: 40vw;
+    margin-top: 120px;
+    background-color:#0000004d ;
+    margin-left: 60px;
+}
+.danhnhan>.item>.text>.headtext{
+    margin: 30px;
+    font-family: 'Lobster', sans-serif;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+}
+.danhnhan>.item>.text>.subtext{
+    margin: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    text-align: justify;
+}
+.danhnhan>.item>.avata1{
+    height: 660px;
+    width: 50vw;
+    margin-top: 60px;
+    background-image: url(/img/danhnhan/TBT.LeDuan.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    margin-left: 200px;
+    
+}
+.danhnhan>.item>.avata3{
+    height: 660px;
+    width: 50vw;
+    margin-top: 60px;
+    background-image: url(/img/danhnhan/NS.TranHoan.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    margin-left: 200px;
+    
+}
+.danhnhan>.item>.avata5{
+    height: 660px;
+    width: 50vw;
+    margin-top: 60px;
+    background-image: url(/img/danhnhan/CS.NhuQuynh.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    margin-left: 200px;
+    
+}
+.danhnhan>.item1{
+    height: 720px;
+    width: 100vw;
+    background-image: linear-gradient(to bottom right, #133d70, #274c8854);
+    margin-top: 0px;
+    background-position: top;
+    padding-top: 0.1%;
+    display: flex;
+}
+.danhnhan>.item1>.text{
+    height: 540px;
+    width: 40vw;
+    margin-top: 120px;
+    background-color:#0000004d ;
+    margin-left: 0px;
+}
+.danhnhan>.item1>.text>.headtext{
+    margin: 30px;
+    font-family: 'Lobster', sans-serif;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+}
+.danhnhan>.item1>.text>.subtext{
+    margin: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    text-align: justify;
+}
+.danhnhan>.item1>.avata2{
+    height: 660px;
+    width: 50vw;
+    margin-top: 60px;
+    background-image: url(/img/danhnhan/NT.CheLanVien.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    margin-left: 60px;
+}
+.danhnhan>.item1>.avata4{
+    height: 660px;
+    width: 50vw;
+    margin-top: 60px;
+    background-image: url(/img/danhnhan/NV.HoangPhuNgocTuong.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    margin-left: 60px;
+}
+.danhnhan>.item1>.text:hover{
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.3s;
+}
+.danhnhan>.item>.text:hover{
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.3s;
+}

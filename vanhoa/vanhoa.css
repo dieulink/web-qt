@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#header {
+    height: 60px;
+    background-color:  #0000004c;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    animation-name: ani5;
+    animation-duration: 0.3s;
+    animation-delay: 0s;
+    animation-direction:normal;
+    animation-timing-function: ease;
+}
+@keyframes ani5{
+    0%{
+        top:-100px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+#nav {
+font-family: 'Montserrat', sans-serif;
+}
+#nav li {
+    display: inline-block;
+}
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 40px;
+    display: inline-block;
+    font-size:large;
+    text-transform: uppercase;
+}
+#nav li:hover a {
+    color: #000000b1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.vanhoa{
+    background-image: linear-gradient(to bottom right, #133d70, #274c8854);
+    margin-top: 0px;
+    background-position: top;
+    padding-top: 0.1%;
+}
+.vanhoa .text{
+    width: 1400px;
+    height: 100px;
+    margin: 70px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.vanhoa .headertext{
+    color: #fff;
+    font-family: 'Lobster', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+.vanhoa .subtext{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+.vanhoa>.page1{
+    width: 100%;
+    height: 720px;
+}
+.vanhoa>.page2{
+    width: 100%;
+    height: 670px;
+}
+.vanhoa>.page1>.picture{
+    display: grid;
+    grid-template-columns: 24.25% 24.25% 24.25% 24.25%;
+    column-gap: 1%;
+    grid-template-rows: 230px 230px;
+    row-gap: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.vanhoa>.page1>.picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.vanhoa>.page1>.picture>.item{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.vanhoa>.page1>.picture>.item>.content{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.vanhoa>.page1>.picture>.item:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.vanhoa>.page1>.picture>.item:nth-child(2){
+    grid-column-start: 3;
+    grid-row-end: 3;
+    grid-row-start: 1;
+}
+.vanhoa>.page2>.picture{
+    display: grid;
+    grid-template-columns: 24.25% 24.25% 24.25% 24.25%;
+    column-gap: 1%;
+    grid-template-rows: 230px 230px;
+    row-gap: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.vanhoa>.page2>.picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.vanhoa>.page2>.picture>.item{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.vanhoa>.page2>.picture>.item>.content{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.vanhoa>.page2>.picture>.item:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.vanhoa>.page2>.picture>.item:nth-child(2){
+    grid-column-start: 3;
+    grid-row-end: 3;
+    grid-row-start: 1;
+}
+.vanhoa .zoom{
+    transform: scale(1);
+    transition: 0.5s;
+}
+.vanhoa .zoom:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.vanhoa>#totop{
+    position: fixed;
+    bottom: 90px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-image: url(/img/vanhoa/top.png);
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.vanhoa>#todown{
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-image: url(/img/vanhoa/down.png);
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.vanhoa>#todown:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.vanhoa>#totop:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}

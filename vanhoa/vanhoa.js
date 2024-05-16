@@ -1,0 +1,12 @@
+totop.onclick=function(){
+    window.scrollTo({
+        top:0,
+        behavior:'smooth'
+    });
+}
+todown.onclick=function(){
+    window.scrollTo({
+        top:1000,
+        behavior:'smooth'
+    });
+}
